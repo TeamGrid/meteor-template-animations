@@ -54,9 +54,8 @@ var attachAnimationCallbacks = function(attrs, selector, tpl) {
   if (callbacks[s]) return;
   callbacks[s] = true;
 
-  $(s).onAnimationEnd(function() {
-
-    var element = $(s);
+  $(s).onAnimationEnd(function(event) {
+    var element = $(event.target);
 
     // Insert
     if (element.hasClass(Anim.insertingClass)) {

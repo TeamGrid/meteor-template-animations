@@ -2,7 +2,7 @@ Package.describe({
   name: "teamgrid:template-animations",
   summary: "Simple DOM animations for Meteor",
   git: "https://github.com/gwendall/meteor-template-animations.git",
-  version: "0.1.10"
+  version: "0.1.11"
 });
 
 Package.onUse(function (api, where) {
